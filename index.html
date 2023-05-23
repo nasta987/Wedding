@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>LOVE</title>
+<link rel="icon" href="around.ico" type="image/x-icon">
+ 
+<style>
+body{
+  background-image: url(wedding.avif);
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+div.namePeaple {
+ 
+}
+ 
+.transparent-header {
+  background-color: transparent;
+  padding: 20px;
+}
+ 
+nav {
+  order: 2;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+}
+ 
+nav ul li {
+  display: inline-block;
+}
+ 
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+ 
+nav ul li a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+ 
+nav ul li:first-child a {
+  margin-left: 0;
+}
+ 
+nav ul li:last-child a {
+  margin-right: 0;
+}
+ 
+.text {
+  order: 1;
+}
+
+.text {
+        font-family: Times, Times New Roman, serif;
+        font-style: italic;
+        font-size: 22px;
+        font-stretch: ultra-expanded;
+        
+        color: #fff;
+        
+      }
+
+      h1 {
+        text-align: center;
+      }
+	  
+	  .container {
+        bottom: 50px;
+        right: 20px;
+        position: absolute;
+        padding: 0px;
+        top: 470px;
+        left: 750px;
+        
+        text-align: center;
+		color: #fff;
+      }
+	  
+</style>
+</head>
+ 
+<body>
+<header class="transparent-header">
+  <nav>
+    <ul>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="programm.html">Программа вечера</a></li>
+      <li><a href="adress.html">Адрес</a></li>
+    </ul>
+  </nav>
+  <div class="text">
+    <b>Виктор </b>
+    <br><b> &nbsp&nbsp&nbsp &#9825; </b>
+    <br><b> Виктория </b>
+  </div>
+</header>
+
+<div class="container">
+      <h1>Приглашение на свадьбу</h1>
+
+      <p><b>Дорогие друзья!</b></p>
+      <p>
+        <b>
+          Мы рады пригласить вас на нашу свадьбу, которая состоится 03 июня 2023 года в
+          КОК "Дом у березы".</b
+        >
+      </p>
+      <p>
+        <b>
+          Пожалуйста, подтвердите ваше присутствие до 31 мая 2023 года по
+          адресу email@mail.ru</b
+        >
+      </p>
+    </div>
+<script>
+      // Код для перехода на страничку через QR код
+      window.onload = function () {
+        // Получить текущий URL страницы
+        var currentURL = window.location.href;
+
+        // Создать QR код с использованием текущего URL
+        var qrCode = new QRCode(document.getElementById("qrcode"), {
+          text: currentURL,
+          width: 128,
+          height: 128,
+        });
+      };
+    </script>
+</body>
+</html>
