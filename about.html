@@ -92,18 +92,25 @@
         flex-wrap: wrap;
       }
 
+      .collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Центрирование фотографий по горизонтали */
+      }
+
       .collage img {
-        width: calc(
-          33.33% - 20px
-        ); /* Распределение ширины на 3 равные части для каждой фотографии */
+        width: 100%; /* Фотографии займут всю доступную ширину */
         margin: 5px;
         border-radius: 30%;
       }
 
-      .collage img:hover {
-        transform: scale(
-          1.1
-        ); /* Увеличение масштаба фотографии при наведении */
+      @media screen and (min-width: 768px) {
+        /* Медиа-запрос для экранов с шириной 768px и более (например, планшеты и компьютеры) */
+        .collage img {
+          width: calc(
+            33.33% - 20px
+          ); /* Возвращаем прежнюю ширину для больших экранов */
+        }
       }
 
       .wordlove {
